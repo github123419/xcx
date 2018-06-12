@@ -1,0 +1,27 @@
+<view class="container">
+
+  <view class="iProList">
+      <view class="hd">
+        电脑<text class="select-btn" bindtap="selectFn">筛选</text>
+        
+        <!--筛选框-->
+        <view class="selectBox">
+        
+        </view>
+      </view>
+      <view class="bd">
+
+        <view class="pro-item pro-item-2" wx:for="{{proList1}}" data-proid="{{item.proId}}" bindtap="gotoProdetail1" >
+            <view class="pro-image">
+              <image src="{{item.proImgUrl}}" />
+            </view>
+            <view class="pro-title">{{item.proName}}</view>
+            <view class="pro-price">¥ {{item.proPrice}}</view>
+        </view>
+
+      </view>      
+
+  </view>
+
+  <view class="iGetMore"><text bindtap="getMore">获取更多</text></view>
+</view>

@@ -1,0 +1,54 @@
+<view class="container">
+
+  <!--hed-->
+  <view class="hed">
+    <view class="hed-btn" bindtap="edit">{{isEdit?'编辑':'完成'}}</view>
+  </view>
+
+  <!--art-->
+  <view class="art">
+    <view class="pro-list">
+
+        <view class="pro-item" wx:for="{{proList}}">
+          <!--pro-icon-->
+          <view class="pro-icon {{item.isChoose?'active':''}}" data-ind="{{index}}" bindtap="proIconTap"></view>
+          <!--pro-pic-->
+          <view class="pro-pic" bindtap="gotoProdetail1" data-proid="{{item.proId}}">
+            <image src="{{item.proImgUrl}}"></image>
+          </view>
+          <!--pro-txt-->
+          <view class="pro-txt">
+            <view class="pro-name" data-proid="{{item.proId}}" bindtap="gotoProdetail1">{{item.proName}}</view>
+            <view class="pro-des" >
+              <text wx:for="{{item.proColor}}" wx:for-index="index2" wx:for-item="item2" >
+                <text wx:if="{{item2.isActive}}">{{item2.name}}</text>
+              </text>
+              、
+              <text wx:for="{{item.proSize}}" wx:for-index="index3" wx:for-item="item3" >
+                <text wx:if="{{item3.isActive}}">{{item3.name}}</text>
+              </text>
+            </view>
+            <view class="pro-bt">
+              <view class="pro-price">￥{{item.proPrice*item.proBuyNumber}}</view>
+              <view class="number-group">
+                <view class="number-btn number-plus" data-ind="{{index}}" bindtap="proNumberPlus">+</view>            
+                <view class="number-input">{{item.proBuyNumber}}</view>          
+                <view class="number-btn number-minus" data-ind="{{index}}" bindtap="proNumberMinus">-</view>
+              </view>
+            </view>
+          </view>
+        </view>      
+
+    </view>
+  </view>
+
+  <!--fot-->
+  <view class="fot">
+    <view class="fot-lf">
+      <view class="fot-icon {{isChooseAll?'active':''}}" bindtap="chooseAll">全选</view>
+      <view class="fot-sum">合计：<text>{{priceTotal}}</text></view>
+    </view>
+    <view class="fot-rt {{isEdit?'':'fot-rt-dis'}}" bindtap="gotoAccount">{{isEdit?'去结算':'删除'}}</view>
+  </view>
+
+</view>

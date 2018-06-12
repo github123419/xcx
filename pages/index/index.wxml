@@ -1,0 +1,68 @@
+<view class="container">
+
+  <!--iBanner-->
+  <view class="iBanner">
+        <swiper indicator-dots="{{indicatorDots}}"  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+          <block wx:for="{{bannerImgObjs}}">
+            <swiper-item>
+              <image src="{{item.proImgBannerUrls[0]}}" class="slide-image"/>
+            </swiper-item>
+          </block>
+        </swiper>    
+   </view>
+
+   <!--iProList-->
+   <!--iProList-1-->
+   <view class="iProList iProList-1">
+      <view class="hd">
+        电脑<text class="pro-more" bindtap="gotoProList1">更多></text>
+      </view>
+      <view class="bd">
+
+        <view class="pro-item pro-item-2" wx:for="{{proList1}}"  data-proid="{{item.proId}}" bindtap="gotoProdetail1" >
+           <view class="pro-image">
+              <image src="{{item.proImgUrl}}" />
+           </view>
+           <view class="pro-title">{{item.proName}}</view>
+           <view class="pro-price">¥ {{item.proPrice}}</view>
+        </view>
+
+      </view>
+   </view>
+   <!--iProList-2-->
+   <view class="iProList iProList-1">
+      <view class="hd">
+        键盘<text class="pro-more" bindtap="gotoProList2">更多></text>
+      </view>
+      <view class="bd">
+
+        <view class="pro-item pro-item-3" wx:for-items="{{proList2}}"  data-proid="{{item.proId}}" bindtap="gotoProdetail2" >
+           <view class="pro-image">
+              <image src="{{item.proImgUrl}}" />
+           </view>
+           <view class="pro-title">{{item.proName}}</view>
+           <view class="pro-price">¥ {{item.proPrice}}</view>
+        </view>
+
+      </view>
+   </view>
+   <!--iProList-3-->
+   <view class="iProList iProList-1">
+      <view class="hd">
+        鼠标<text class="pro-more" bindtap="gotoProList3">更多></text>
+      </view>
+      <view class="bd">
+
+        <view class="pro-item pro-item-2" wx:for-items="{{proList3}}"  data-proid="{{item.proId}}" bindtap="gotoProdetail3" >
+           <view class="pro-image">
+              <image src="{{item.proImgUrl}}" />
+           </view>
+           <view class="pro-title">{{item.proName}}</view>
+           <view class="pro-price">¥ {{item.proPrice}}</view>
+        </view>
+
+      </view>
+   </view>
+   
+
+</view>

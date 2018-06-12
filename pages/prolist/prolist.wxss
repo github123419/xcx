@@ -1,0 +1,93 @@
+.container {
+  background:#f2f2f2;  
+  min-height:100%;
+}
+/*iProList*/
+.iProList {
+  background:#f2f2f2;
+  position:relative;
+  padding:0 20rpx;
+  overflow:hidden;
+}
+.iProList .hd {
+  position:relative;  
+  padding-left: 20rpx;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:32rpx;
+  color:#333;
+}
+.iProList .hd:before {
+  content:'';
+  position:absolute;
+  left:0;
+  top:10rpx;
+  bottom:10rpx;
+  width:10rpx;
+  background:#48C23D;
+}
+.iProList .select-btn {
+  float:right;
+  line-height:80rpx;
+  font-size:28rpx;
+  color:#999;
+}
+.iProList .bd {  
+  margin-right:-20rpx;
+  padding-bottom:100rpx;
+  overflow:hidden;
+}
+.pro-item {
+  float:left;
+  width: 730rpx;
+  height: auto;
+  background-color: #fff;
+  overflow: hidden;
+  margin:0 20rpx 20rpx 0;
+}
+
+/*pro-item-2*/
+.pro-item-2 {
+  width: 345rpx;
+  height: 460rpx;
+}
+.pro-item-2:nth-of-type(even) {
+  margin-right:0;
+}
+.pro-item-2 .pro-image{
+  padding:10rpx;
+  width: 325rpx;
+  height: 325rpx;
+}
+.pro-item-2 .pro-image image{
+  width: 325rpx;
+  height: 325rpx;
+}
+.pro-item-2 .pro-title{
+  padding:0 20rpx;
+  line-height:1.5em;
+  font-size:32rpx;
+  color:#666;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+}
+.pro-item-2 .pro-price{
+  padding:0 20rpx;
+  line-height:1.5em;
+  font-size:40rpx;
+  color:#ff0010;
+}
+.iGetMore {  
+  position:relative;   
+  padding:20rpx;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:32rpx;
+  color:#999;
+  text-align:center;
+  clear:both;
+  border-top:1px solid #ddd;
+  overflow:hidden;
+}

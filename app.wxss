@@ -1,0 +1,9 @@
+/**app.wxss**/
+/*750物理像素 == 750rpx */
+.container { position:relative; } 
+
+.iPopup { position:fixed; z-index:999; top:0;right:0; bottom:0;left:0;}
+.popup-mask { position:absolute; z-index:1; top:0;right:0; bottom:0;left:0;background:rgba(0,0,0,0.5);  }
+.popup-wrapper { position:absolute; z-index:2; bottom:0;left:0;right:0;background:#ffffff; min-height:100rpx;
+-webkit-box-sizing:border-box;box-sizing:border-box; padding:40rpx 40rpx 100rpx;}
+.popup-close{ position:absolute; z-index:3; top:-20rpx;right:30rpx; }

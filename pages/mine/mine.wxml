@@ -1,0 +1,26 @@
+<view class="container">
+
+  <!--userinfo-->
+  <view class="userinfo" bindtap="bindViewTap">
+    <image class="bg" src="/images/mine-bg.jpg" ></image>
+    <view class="inner">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>    
+  </view>
+
+  <!--info_list-->
+  <view class="info_list">
+    <block wx:for="{{userListInfo}}">
+        <view class="info-item">
+            <view class="info-item-lf"><image src="{{item.icon}}"></image></view>
+            <view class="info-item-txt">
+                <view class="info-item-txt_p"> {{item.text}} </view>
+            </view>
+            <view wx:if="{{item.isunread}}" class="badge">{{item.unreadNum}}</view>
+            <view class="with_arrow">></view>
+        </view>
+    </block>
+  </view>
+
+</view>

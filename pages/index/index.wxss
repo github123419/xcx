@@ -1,0 +1,125 @@
+.container {
+  background:#f2f2f2;
+  min-height:100%;
+}
+/*iBanner*/
+swiper {
+  width:750rpx;
+  height:450rpx;  
+}
+.slide-image {
+  width:750rpx;
+  height:450rpx;
+}
+/*iProList*/
+.iProList {
+  background:#f2f2f2;
+  position:relative;
+  padding:0 20rpx;
+  overflow:hidden;
+}
+.iProList .hd {
+  position:relative;  
+  padding-left: 20rpx;
+  height:80rpx;
+  line-height:80rpx;
+  font-size:32rpx;
+  color:#333;
+}
+.iProList .hd:before {
+  content:'';
+  position:absolute;
+  left:0;
+  top:10rpx;
+  bottom:10rpx;
+  width:10rpx;
+  background:#48C23D;
+}
+.iProList .pro-more {
+  float:right;
+  line-height:80rpx;
+  font-size:28rpx;
+  color:#999;
+}
+.iProList .bd {  
+  margin-right:-20rpx;
+}
+.pro-item {
+  float:left;
+  width: 730rpx;
+  height: auto;
+  background-color: #fff;
+  overflow: hidden;
+  margin:0 20rpx 20rpx 0;
+}
+
+/*pro-item-2*/
+.pro-item-2 {
+  width: 345rpx;
+  height: 460rpx;
+}
+.pro-item-2:nth-of-type(even) {
+  margin-right:0;
+}
+.pro-item-2 .pro-image{
+  padding:10rpx;
+  width: 325rpx;
+  height: 325rpx;
+}
+.pro-item-2 .pro-image image{
+  width: 325rpx;
+  height: 325rpx;
+}
+.pro-item-2 .pro-title{
+  padding:0 20rpx;
+  line-height:1.5em;
+  font-size:32rpx;
+  color:#666;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+}
+.pro-item-2 .pro-price{
+  padding:0 20rpx;
+  line-height:1.5em;
+  font-size:40rpx;
+  color:#ff0010;
+}
+
+/*pro-item-3*/
+.pro-item-3 {
+  width: 230rpx;
+  height: 360rpx;
+  margin:0 10rpx 20rpx 0;
+}
+.pro-item-3:nth-of-type(3n+3) {
+  margin-right:0;
+}
+.pro-item-3 .pro-image{
+  padding:5rpx;
+  width: 220rpx;
+  height: 220rpx;
+}
+.pro-item-3 .pro-image image{
+  width: 220rpx;
+  height: 220rpx;
+}
+.pro-item-3 .pro-title{
+  padding:0 10rpx;
+  line-height:1.5em;
+  font-size:32rpx;
+  color:#666;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  -o-text-overflow:ellipsis;
+}
+.pro-item-3 .pro-price{
+  padding:0 10rpx;
+  line-height:1.5em;
+  font-size:40rpx;
+  color:#ff0010;
+}
+
+
